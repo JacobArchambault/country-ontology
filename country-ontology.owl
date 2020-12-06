@@ -13,7 +13,44 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#borders -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#borders">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#Country"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
@@ -23,19 +60,22 @@
 
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#Canada -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#Canada"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#Canada"/>
     
 
 
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#Mexico -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#Mexico"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#Mexico"/>
     
 
 
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#United_States_of_America -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#United_States_of_America"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#United_States_of_America">
+        <borders rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#Canada"/>
+        <borders rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-ontology#Mexico"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
