@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology" uri="mereology.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1607312603135" name="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent" uri="continent.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1607312603135" name="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country" uri="country.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1607312603135" name="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-region" uri="country-region.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1607312603135" name="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology" uri="mereology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1607312603135" name="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/north-america" uri="north-america.owl"/>
+    </group>
+</catalog>
