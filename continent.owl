@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#"
+     xml:base="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Continent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Continent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Africa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Africa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Antarctica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Antarctica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Asia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Asia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Australia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Australia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Europe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Europe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#North_America -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#North_America">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#South_America -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#South_America">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Africa"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Antarctica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Asia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Australia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#Europe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#North_America"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/continent#South_America"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
