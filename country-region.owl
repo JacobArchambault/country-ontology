@@ -32,7 +32,7 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-region#Region"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#in"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#isPartOf"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country#Country"/>
                     </owl:Restriction>
                 </owl:intersectionOf>

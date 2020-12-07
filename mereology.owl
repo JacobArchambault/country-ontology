@@ -24,14 +24,14 @@
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#hasPart -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#hasPart">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#in"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#isPartOf"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#in -->
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#isPartOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#in">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#isPartOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
@@ -54,13 +54,27 @@
 
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#Part -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#Part"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#Part">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#isPartOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#Whole"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
     
 
 
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#Whole -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#Whole"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#Whole">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#Part"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+    </owl:Class>
 </rdf:RDF>
 
 

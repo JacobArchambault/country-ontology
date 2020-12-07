@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#"
+     xml:base="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mereology="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division">
+        <owl:imports rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/north-america"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/region-division"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#US_Region_Division -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#US_Region_Division">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/region-division#Region_Division"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#isPartOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region#US_Region"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/region-division#Region_Division"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#East_North_Central -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#East_North_Central">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#US_Region_Division"/>
+        <mereology:isPartOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region#US_Midwest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#East_South_Central -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#East_South_Central">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#US_Region_Division"/>
+        <mereology:isPartOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region#US_South"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#Mid_Atlantic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#Mid_Atlantic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#US_Region_Division"/>
+        <mereology:isPartOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region#US_Northeast"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#Mountain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#Mountain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#US_Region_Division"/>
+        <mereology:isPartOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region#US_West"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#New_England -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#New_England">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#US_Region_Division"/>
+        <mereology:isPartOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region#US_Northeast"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#Pacific -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#Pacific">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#US_Region_Division"/>
+        <mereology:isPartOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region#US_West"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#South_Atlantic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#South_Atlantic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#US_Region_Division"/>
+        <mereology:isPartOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region#US_South"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#West_North_Central -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#West_North_Central">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#US_Region_Division"/>
+        <mereology:isPartOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region#US_Midwest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#West_South_Central -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#West_South_Central">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#US_Region_Division"/>
+        <mereology:isPartOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region#US_South"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
