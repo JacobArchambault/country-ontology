@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state#"
+     xml:base="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:mereology="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state">
+        <owl:imports rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division"/>
+        <owl:imports rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state#Mountain_State -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state#Mountain_State">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#US_State"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#isPartOf"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region-division#Mountain"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#US_State"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Arizona -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Arizona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state#Mountain_State"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Colorado -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Colorado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state#Mountain_State"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Idaho -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Idaho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state#Mountain_State"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Montana -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Montana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state#Mountain_State"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Nevada -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Nevada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state#Mountain_State"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#New_Mexico -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#New_Mexico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state#Mountain_State"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Utah -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Utah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state#Mountain_State"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Wyoming -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-state#Wyoming">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mountain-state#Mountain_State"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
