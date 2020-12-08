@@ -28,6 +28,17 @@
     <!-- http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region#US_Region -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/us-region#US_Region">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-region#Country_Region"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/mereology#isPartOf"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/north-america#United_States_of_America"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jacobarchambault/ontologies/2020/11/country-region#Country_Region"/>
     </owl:Class>
     
